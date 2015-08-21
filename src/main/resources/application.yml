@@ -1,0 +1,35 @@
+# @author: ihoneymon(ihoneymon@gmail.com)
+
+spring.profiles.active: ${mode:local}
+
+#공통
+spring:
+  datasource:
+    url: jdbc:h2:file:~/.database/rocking-make-rest-api;AUTO_SERVER=true;
+    driver-class-name: org.h2.Driver
+    sql-script-encoding: UTF-8
+    username: sa
+    password: 
+  jpa:
+    database: H2
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: ${port:8080}
+
+---
+
+#Profile: local
+spring:
+  profiles: local
+  
+---
+
+#Profile: test
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:h2:mem:rocking-make-rest-api
+server:
+  port: 0 #random

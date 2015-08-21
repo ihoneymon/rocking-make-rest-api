@@ -1,0 +1,27 @@
+{
+  "name": "rocking-make-rest-api",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ihoneymon/rocking-make-rest-api",
+  "authors": [
+    "ihoneymon <ihoneymon@gmail.com>"
+  ],
+  "description": "스프링부트 기반으로 REST API 만들기",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "gradle",
+    "springboot",
+    "restapi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/static/bower_components",
+    "test",
+    "tests"
+  ]
+}
